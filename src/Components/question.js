@@ -1,7 +1,3 @@
-import { Card, CardContent } from "@mui/material";
-
-import ChangeQuestion from "./changeQuestion";
-
 const Question = ({prompt, answerChoices}) => {
     return (
         <div className="question">
