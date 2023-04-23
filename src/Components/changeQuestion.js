@@ -3,7 +3,7 @@ import { Button, Typography } from "@mui/material";
 const ChangeQuestion = ({questionNumber, setQuestionNumber, minQuestions, maxQuestions}) => {
 
     const prevQuestion = () => {
-        if (questionNumber == minQuestions) {
+        if (questionNumber === minQuestions) {
             return;
         }
 
@@ -11,7 +11,7 @@ const ChangeQuestion = ({questionNumber, setQuestionNumber, minQuestions, maxQue
     }
 
     const nextQuestion = () => {
-        if (questionNumber == maxQuestions) {
+        if (questionNumber === maxQuestions) {
             return;
         }
 
