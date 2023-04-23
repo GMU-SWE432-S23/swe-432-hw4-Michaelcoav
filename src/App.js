@@ -1,9 +1,26 @@
 import './App.css';
+import { Card } from '@mui/material';
+import Quiz from './Components/quiz';
+import Prompt from './Components/prompt';
+import AnswerChoices from './Components/answerChoices';
+import Question from './Components/question';
 
 function App() {
+
+  const choices = [{answerChoice: 4, isCorrect: true}, {answerChoice: 2, isCorrect: false}, {answerChoice: 3, isCorrect: false}, {answerChoice: 1, isCorrect: false}];
+
+  const answerChoices = <AnswerChoices choices={choices}/>;
+  
+  const prompt = <Prompt questionPrompt={"What is 2 + 2"}/>;
+
+  const questions = [<Question prompt={prompt} answerChoices={answerChoices}/>];
+
+  //const choices = [<Choice answerChoice={4} isCorrect={true}/>, <Choice answerChoice={2} isCorrect={false}/>];
+
   return (
     <div>
-      Hello World
+      <Quiz questions={questions}/>
+      
     </div>
   );
 }
