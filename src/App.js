@@ -4,7 +4,11 @@ import Prompt from './Components/prompt';
 import AnswerChoices from './Components/answerChoices';
 import Question from './Components/question';
 
+import { useState } from 'react';
+
+
 function App() {
+  const [hasStarted, setHasStarted] = useState(false);
 
   const choices = [{answerChoice: 4, isCorrect: true}, {answerChoice: 2, isCorrect: false}, {answerChoice: 3, isCorrect: false}, {answerChoice: 1, isCorrect: false}];
 
@@ -16,8 +20,7 @@ function App() {
 
   return (
     <div>
-      <Quiz questions={questions}/>
-      
+      {hasStarted ? <Quiz questions={questions}/> : null}
     </div>
   );
 }
