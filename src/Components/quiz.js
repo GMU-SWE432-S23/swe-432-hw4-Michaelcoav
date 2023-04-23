@@ -6,21 +6,6 @@ import ChangeQuestion from "./changeQuestion";
 
 const Quiz = ({questions}) => {
     const [questionNumber, setQuestionNumber] = useState(0);
-    const [timer, setTimer] = useState(30);
-
-    const decreaseTimer = () => {
-        if (timer == 0) {
-            return;
-        }
-        
-        setTimeout(() => {
-            setTimer(timer - 1);
-        }, 1000)
-    }
-
-    if (timer >= 0) {
-        decreaseTimer();
-    }
     
     return (
         <Card className="quiz" variant="outlined">
@@ -29,7 +14,6 @@ const Quiz = ({questions}) => {
                     <div>
                         {questionNumber + 1}
                     </div>
-                    {timer}
                 </div>
 
                 {questions[questionNumber]}
