@@ -1,6 +1,9 @@
 Student Name: Michael Coca-Vargas
+
 Student G-number: G01272038
+
 Render Deployment URL:
+
 Description of your Web App, and 5 React Components:
 Quiz App that has three questions and will show users when they click the correct or incorrect answer. Users start at start button
 to start quiz, then can go back and forth between all the questions. Once the user is done they will submit and see the finishing screen.
