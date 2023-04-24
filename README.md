@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+Student Name: Michael Coca-Vargas
+Student G-number: G01272038
+Render Deployment URL:
+Description of your Web App, and 5 React Components:
+Quiz App that has three questions and will show users when they click the correct or incorrect answer. Users start at start button
+to start quiz, then can go back and forth between all the questions. Once the user is done they will submit and see the finishing screen.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Components:
+Choice Component represents a choice for a question on the quiz, when clicked will change colors to indicate if correct.
+Answer Choices Component represent all the possible choices for a question the quiz.
+Prompt Component represents the question prompt for a single prompt.
+Question Component represents the prompt and displays the all the answer choices.
+Quiz Component represents all the questions on the quiz that can be changed by the next and prev buttons as well as displaying the
+question the user is on.
 
-## Available Scripts
+Please indicate whether you completed the Extra Credit
+No
 
-In the project directory, you can run:
+React Grading Criteria
+App has at least 5 React Components - 1 point each (5 points total)
+    Answer Choices, Change Question, Choice, Prompt, Question, Quiz, etc.
 
-### `npm start`
+Conditional Rendering is used - 4 points
+    has Started state used to conditionally render quiz.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+At least 5 event handlers are used - 1 point each (5 points total)
+    Components with onClick handlers: 
+        Change Question, 2 
+        Choice, 1
+        Start Quiz, 1
+        Sumbit Quiz, 1
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2 Controlled Components are used - 2 points each (4 points total)
+    Change Question component controls the question Number state which changes the question displayed in the quiz.
+    Choice component default color state is white then color changes based on if user clicks choice then if it is correct or incorrect.
+    
+List containing child elements with unique keys is used - 4 points
+    Answer Choice component contains ordered list of choice components with unique keys
 
-### `npm test`
+Total: 22 points
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+CSS Grading Criteria
+One Cascading selector overrides another - 2 points
+    List cascading selector class overides OL class to get rid of padding-inline-start and set to 0.
 
-### `npm run build`
+Two pseudo-classes are used - 2 points each (4 points total)
+    Hover pseudo class with anchor element button used on the start button.
+    Focus pseudo class with anchor element button used on the start button.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+One element is centered inside a container - 2 point
+    Button centered inside start quiz comoponent using flex.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Z index is used to display a component stacked on top of another - 2 point
+    Finished Quiz component stacks on top of Quiz element when submit button is clicked.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+One animation using a transition - 4 points
+    Animation used on button elements which are only used on the start button to start the quiz.
 
-### `npm run eject`
+Use at least one fixed-size component and one relative-size component - 1 point each (2 points total)
+    Start Quiz component is a relative size component.
+    Quiz component is a fixed size component.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Display Grid with multiple rows and columns is used- 2 points
+    Finished Quiz uses grid to display two rows with the bottom row having 3 columns.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Total: 18 points
