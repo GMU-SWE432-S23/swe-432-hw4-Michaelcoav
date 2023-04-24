@@ -1,6 +1,6 @@
 const Question = ({prompt, answerChoices}) => {
     return (
-        <div className="question">
+        <div className="flex-container">
             <div>
                 {prompt}
                 <br />
