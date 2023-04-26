@@ -1,20 +1,41 @@
-Student Name: Michael Coca-Vargas
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/aqdPCSr-)
+# SWE-432 HW-4 Starter Application
 
-Student G-number: G01272038
+## Submission Information
 
-Render Deployment URL: https://michael-coca-vargas-swe432-hw4.onrender.com
+### Student Information
 
-Description of your Web App, and 5 React Components:
-Quiz App that has three questions and will show users when they click the correct or incorrect answer. Users start at start button
+*Please fill in this information before submission*
+
+* **Student Name:** Michael Coca-Vargas
+* **Student G-Number:** G01272038
+* **Render Deployment URL:** https://michael-coca-vargas-swe432-hw4.onrender.com
+
+### Documentation of your Web App and React Components
+
+*Here please describe your (at least) 5 different React components as well as the overall purpose of your web application. We provide an example below of what we expect this documentation to look like.*
+
+**General App Description:** Quiz App that has three questions and will show users when they click the correct or incorrect answer. Users start at start button
 to start quiz, then can go back and forth between all the questions. Once the user is done they will submit and see the finishing screen.
 
-Components:
-Choice Component represents a choice for a question on the quiz, when clicked will change colors to indicate if correct.
-Answer Choices Component represent all the possible choices for a question the quiz.
-Prompt Component represents the question prompt for a single prompt.
-Question Component represents the prompt and displays the all the answer choices.
-Quiz Component represents all the questions on the quiz that can be changed by the next and prev buttons as well as displaying the
-question the user is on.
+* **Start Quiz Component:**
+  * *Functionality:* Start screen for quiz, displays button for user to click to start the quiz.
+  * *Interactivity:* Once button is clicked render the quiz.
+
+* **Choice Component:** 
+  * *Functionality:* Choice for a question on the quiz, displays a button with text inside representing a choice on the quiz.
+  * *Interactivity:* The user can click on the choice, it will change colors to indicate if correct.
+
+* **Submit Quiz Component:** 
+  * *Functionality:* Displays one question at a time with the question prompt at the top, the answer choices underneath, and change question buttons at the button, along with the submit button.
+
+* **Change Question Component:**
+  * *Functionality:* Displays two buttons inside a div, to change the question on the quiz.
+  * *Interactivity:* The user can click on the previous button to go the previous question, click on the next button to go to the next question.
+
+* **Submit Quiz Component:** 
+  * *Functionality:* Displays submit button to show ending screen of quiz.
+  * *Interactivity:* Once button is clicked render the ending screen.
 
 Please indicate whether you completed the Extra Credit
 No
